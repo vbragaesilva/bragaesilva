@@ -1,0 +1,2 @@
+language = "nextjs"
+run = "npm start"
