@@ -1,7 +1,7 @@
 # Vinícius Braga e Silva
 ---
 ## Introdução
-Este é o meu site, dê uma olhada [aqui] :eyes:(https://nopes.vercel.app).
+Este é o meu site, dê uma olhada [aqui](https://nopes.vercel.app). :eyes:
 
 
 
