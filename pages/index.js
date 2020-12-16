@@ -1,3 +1,4 @@
+import '../styles/style.css';
 import Head from 'next/head';
 import Link from 'next/link';
 function Home(){
