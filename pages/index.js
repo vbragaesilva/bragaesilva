@@ -7,25 +7,25 @@ function Home(){
 				<title>Bem vindo!</title>
 			</Head>
 			<header>
-				BRAGA E SILVA
+				<h1 class="tit">BRAGA E SILVA</h1>
 				<nav>
 					<ul class="nav-links">
 
 						<li>
 							<Link href="/jogos">  
-								<a>Jogos</a> 
+								<a class="as">Jogos</a> 
 							</Link>
 						</li>
 
 						<li>
 							<Link href="/sites">  
-								<a>Sites</a> 
+								<a class="as">Sites</a> 
 							</Link>
 						</li>
 
 						<li>
 							<Link href="/sobre">  
-								<a>Sobre</a> 
+								<a class="as">Sobre</a> 
 							</Link>
 						</li>
 						
