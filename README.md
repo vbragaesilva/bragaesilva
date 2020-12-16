@@ -6,9 +6,6 @@ Este é o meu site, dê uma olhada [aqui](https://nopes.vercel.app). :eyes:
 Lista de coisas a fazer:
 
 - [x] Iniciar
-- [ ] Navbar
-   - [ ] Home
-   - [ ] Games
-   - [ ] Sobre 
+- [x] Navbar
 - [ ] Footer
 - [ ] Form?

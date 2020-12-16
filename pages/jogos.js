@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-function Sobre(){
+function Jogos(){
 	function rec(){
 		window.location.href = '/';
 	}
@@ -23,14 +23,14 @@ function Sobre(){
 						</li>
 
 						<li>
-							<Link href="/jogos">  
-								<a class="as">Jogos</a> 
+							<Link href="/sites">  
+								<a class="as">Sites</a> 
 							</Link>
 						</li>
 
 						<li>
-							<Link href="/sites">  
-								<a class="as">Sites</a> 
+							<Link href="/sobre">  
+								<a class="as">Sobre</a> 
 							</Link>
 						</li>
 						
@@ -41,14 +41,12 @@ function Sobre(){
 				</Link>
 			</header>
 			<div class="bv">
-				<h2>Sobre</h2>
-				<p>Nome: Vinícius Braga e Silva</p>
-				<p>Nascimento: 01/01/2001</p>
-				<p>Profissão: Estudante 0_0</p>
-				<p>Redes: ...</p>
+				<h2>Jogos</h2>
+				<p>Veja alguns dos</p>
+				<p>meus jogos abaixo</p>
 			</div>
 		</div>
 	)
 }
 
-export default Sobre
+export default Jogos

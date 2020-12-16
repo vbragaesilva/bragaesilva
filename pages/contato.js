@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-function Sobre(){
+function Contato(){
 	function rec(){
 		window.location.href = '/';
 	}
@@ -33,22 +33,25 @@ function Sobre(){
 								<a class="as">Sites</a> 
 							</Link>
 						</li>
+
+						<li>
+							<Link href="/sobre">  
+								<a class="as">Sobre</a> 
+							</Link>
+						</li>
 						
 					</ul>
 				</nav>
-				<Link href="/contato">
-					<button>Contato</button>
-				</Link>
 			</header>
 			<div class="bv">
-				<h2>Sobre</h2>
-				<p>Nome: Vinícius Braga e Silva</p>
-				<p>Nascimento: 01/01/2001</p>
-				<p>Profissão: Estudante 0_0</p>
-				<p>Redes: ...</p>
+				<h2>Entre em Contato</h2>
+				<p>e-mail: teste@teste.com</p>
+				<p>telefone: (12) 99797-7997</p>
+				<p>instagram: @ueh_hue</p>
+				<p>facebook: Vinícius Braga</p>
 			</div>
 		</div>
 	)
 }
 
-export default Sobre
+export default Contato
