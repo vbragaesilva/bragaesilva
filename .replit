@@ -1,2 +1,2 @@
 language = "nextjs"
-run = "npm start"
+run = "npm run dev"
