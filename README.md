@@ -1,9 +1,6 @@
 # Vinícius Braga e Silva
----
-## Introdução
-Este é o meu site, dê uma olhada [aqui](https://nopes.vercel.app). :eyes:
 
-
+Este é o meu site, dê uma olhada [aqui](https://nopes.vercel.app). :eyes:  
 
 ## TO DO List  
 Lista de coisas a fazer:
