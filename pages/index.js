@@ -6,10 +6,35 @@ function Home(){
 			<Head>
 				<title>Bem vindo!</title>
 			</Head>
-			<h1>Home UHUU</h1>
-			<Link href="/sobre">
-				<a>Ir para Sobre</a>
-			</Link>
+			<header>
+				BRAGA E SILVA
+				<nav>
+					<ul class="nav-links">
+
+						<li>
+							<Link href="/jogos">  
+								<a>Jogos</a> 
+							</Link>
+						</li>
+
+						<li>
+							<Link href="/sites">  
+								<a>Sites</a> 
+							</Link>
+						</li>
+
+						<li>
+							<Link href="/sobre">  
+								<a>Sobre</a> 
+							</Link>
+						</li>
+						
+					</ul>
+				</nav>
+				<Link href="/contato">
+					<button>Contato</button>
+				</Link>
+			</header>
 		</div>
 	)
 }
