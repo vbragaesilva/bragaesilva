@@ -9,7 +9,7 @@ function Contato(){
 				<title>Braga e Silva</title>
 			</Head>
 			<DefaultHeader/>
-			<div class="content">
+			<div class="main">
 				<h2>Entre em Contato</h2>
 				<p>e-mail: teste@teste.com</p>
 				<p>telefone: (12) 99797-7997</p>

@@ -88,7 +88,7 @@ body{
 	font-family: 'Signika', sans-serif;
 }
 
-.content{
+.main{
 	text-align: center;
 	margin-top:100px;
 }
@@ -98,6 +98,6 @@ h2{
 	font-size: 60px;
 }
 
-.content p{
+.main p{
 	font-size: 26px;
 }

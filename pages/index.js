@@ -11,12 +11,15 @@ function Home() {
 
             <DefaultHeader />
 
-            <div class="content">
+            <div class="main">
                 <h2>Bem vindo!</h2>
                 <p>Este é o meu site.</p>
                 <p>Você pode encontrar coisas</p>
                 <p> interessantes para fazer </p>
                 <p>no cabeçalho.</p>
+                <div class="">
+
+                </div>
             </div>
         </div>
     )

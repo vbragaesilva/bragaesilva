@@ -12,7 +12,7 @@ function Sites(){
 				<title>Braga e Silva</title>
 			</Head>
 			<DefaultHeader />
-			<div class="content">
+			<div class="main">
 				<h2>Sites</h2>
 				<p>Abaixo estão alguns</p>
 				<p> sites interessantes</p>

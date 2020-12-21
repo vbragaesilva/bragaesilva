@@ -12,7 +12,7 @@ function Sobre(){
 				<title>Braga e Silva</title>
 			</Head>
 			<DefaultHeader/>
-			<div class="content">
+			<div class="main">
 				<h2>Sobre</h2>
 				<p>Nome: Vinícius Braga e Silva</p>
 				<p>Nascimento: 01/01/2001</p>
