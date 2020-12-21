@@ -13,6 +13,9 @@ function Jogos(){
 				<h2>Jogos</h2>
 				<p>Veja alguns dos</p>
 				<p>meus jogos abaixo</p>
+                <div class="content">
+                    <h3>Asteroids</h3>
+                </div>
 			</div>
 		</div>
 	)

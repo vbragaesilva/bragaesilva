@@ -94,10 +94,27 @@ body{
 }
 
 h2{
-	margin: 40px;
+	margin: 30px;
 	font-size: 60px;
 }
 
 .main p{
 	font-size: 26px;
 }
+
+.content{
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 60px;
+    padding: 25px;
+    text-align: left;
+}
+
+.content h3{
+    color: #24252a;
+    font-size: 30px;
+}
+

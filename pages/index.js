@@ -17,9 +17,7 @@ function Home() {
                 <p>Você pode encontrar coisas</p>
                 <p> interessantes para fazer </p>
                 <p>no cabeçalho.</p>
-                <div class="">
-
-                </div>
+                
             </div>
         </div>
     )
