@@ -10,16 +10,16 @@
 }
 
 a, li, header, ul{
-	background-color: #24252A;
+	background-color: white;
 }
 
 
 a, li, button {
   text-decoration: none;
 	font-family: 'Signika', sans-serif;
-	font-weight: 350;
+	font-weight: 500;
 	font-size: 23px;
-	color: white;
+	color: #24252A;
 }
 
 
@@ -27,8 +27,8 @@ a, li, button {
 .tit{
 	font-family: 'Permanent Marker', cursive;
 	margin: 10px;
-	color: #fff;
-	font-weight: 100;
+	color: #24252A;
+	font-weight: 400;
 	cursor: pointer;
 	font-size: 40px;
 	margin-right: auto;
@@ -39,7 +39,7 @@ header{
 	justify-content: flex-end;
 	align-items: center;
 	padding: 20px 6%;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -55,7 +55,7 @@ header{
 
 .as{
 		transition: 0.3s ease 0s;
-		color: white;
+		color: #24252A;
 }
 
 .as:hover{
@@ -65,9 +65,12 @@ header{
 button{
 	margin-left: 20px;
 	padding: 9px 25px;
-	background: none;
-	border:2px solid rgb(0, 185, 154);
-	color: rgb(0, 185, 154);
+    background-color: #24252A;
+    border: none;
+    color: white;
+    /* background: none;
+    border:2px solid rgb(0, 185, 154);
+	color: rgb(0, 185, 154); */
 	border-radius: 50px;
 	cursor: pointer;
 	transition: 0.3s ease 0s;
@@ -76,11 +79,11 @@ button{
 
 button:hover{
 	background-color: rgb(0, 185, 154);
-	color: #fff;
 }
 
 body{
-	background-color: rgb(81, 102, 92);
+    /* background-color: rgb(81, 102, 92); */
+    background-color: #5f6f66;
 	color: white;
 	font-family: 'Signika', sans-serif;
 }
