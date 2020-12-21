@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
 
 
+html{
+    /* A cada 1rem será considerado 10px !*/
+    font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
 	margin: 0;
@@ -18,7 +23,7 @@ a, li, button {
   text-decoration: none;
 	font-family: 'Signika', sans-serif;
 	font-weight: 500;
-	font-size: 23px;
+	font-size: 2.3rem;
 	color: #24252A;
 }
 
@@ -30,7 +35,7 @@ a, li, button {
 	color: #24252A;
 	font-weight: 400;
 	cursor: pointer;
-	font-size: 40px;
+	font-size: 4rem;
 	margin-right: auto;
 }
 
@@ -95,11 +100,11 @@ body{
 
 h2{
 	margin: 30px;
-	font-size: 60px;
+	font-size: 6rem;
 }
 
 .main p{
-	font-size: 26px;
+	font-size: 2.6rem;
 }
 
 .content{
@@ -115,6 +120,6 @@ h2{
 
 .content h3{
     color: #24252a;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
