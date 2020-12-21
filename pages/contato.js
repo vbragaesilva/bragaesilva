@@ -49,6 +49,7 @@ function Contato(){
 				<p>telefone: (12) 99797-7997</p>
 				<p>instagram: @ueh_hue</p>
 				<p>facebook: Vinícius Braga</p>
+                <p>Snapchat: Vini</p>
 			</div>
 		</div>
 	)
