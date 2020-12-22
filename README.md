@@ -8,7 +8,7 @@ Lista de coisas a fazer:
 - [x] Iniciar
 - [x] Navbar
 - [ ] Conteúdo
-- [ ] Responsividade
+- [x] Responsividade
 - [ ] Botão de Topo
 - [ ] Footer
 - [ ] Form?
