@@ -11,8 +11,13 @@ function Myfunc(){
             <div id="dh-wd">
                 <header>
                     <a class="tit">BRAGA E SILVA</a>
-
-                    <nav>
+                    <div class="menu-section on">
+                        <div class="menu-toggle">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                        <nav>
                         <ul class="nav-links">
 
                             <li>
@@ -39,11 +44,16 @@ function Myfunc(){
                                 </Link>
                             </li>
 
+                            <li>
+                                <Link href="/contato">
+                                    <button>Contato</button>
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
-                    <Link href="/contato">
-                        <button>Contato</button>
-                    </Link>
+                    </div>
+                    
+                    
                 </header>
             </div>
         )

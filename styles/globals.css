@@ -24,7 +24,8 @@ a, li, button {
 	font-family: 'Signika', sans-serif;
 	font-weight: 500;
 	font-size: 2.3rem;
-	color: #24252A;
+    color: #24252A;
+    transition: 0.3s ease 0s;
 }
 
 
@@ -36,18 +37,30 @@ a, li, button {
 	font-weight: 400;
 	cursor: pointer;
 	font-size: 4rem;
-	margin-right: auto;
+    margin-right: auto;
+    transition: 0.3s ease 0s;
+    display: inline;
 }
 
 header{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 20px 6%;
+	padding: 10px 6%;
 	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+nav{
+    transition: 0.3s ease 0s;
+}
 
+.menu-toggle{
+    transition: 0.3s ease 0s;
+}
+
+/* .menu-section.on, .menu-section{
+    display: none;
+} */
 
 .nav-links{
 	list-style: none;
@@ -55,7 +68,7 @@ header{
 
 .nav-links li{
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 0rem 2rem;
 }
 
 .as{
@@ -68,7 +81,7 @@ header{
 }
 
 button{
-	margin-left: 20px;
+	margin-left: 0;
 	padding: 9px 25px;
     background-color: #24252A;
     border: none;
@@ -95,16 +108,19 @@ body{
 
 .main{
 	text-align: center;
-	margin-top:100px;
+    margin-top:100px;
+    margin: 3rem;
 }
 
 h2{
-	margin: 30px;
-	font-size: 6rem;
+	margin: 3rem;
+    font-size: 6rem;
+    transition: 0.3s ease 0s;
 }
 
 .main p{
-	font-size: 2.6rem;
+    font-size: 2.6rem;
+    transition: 0.3s ease 0s;
 }
 
 .content{
@@ -123,3 +139,52 @@ h2{
     font-size: 3rem;
 }
 
+
+/* media queries */
+
+@media (max-width: 988px){
+    html{
+        font-size: 56%;
+    }
+}
+
+@media (max-width: 891px){
+    html{
+        font-size: 48%;
+    }
+}
+
+@media (max-width: 780px){
+    nav{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three{
+        background-color: #24252a;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 5px;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+        margin-left: 60px;
+        order: 2;
+    }
+
+    /* fullscreen */
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f00;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+}
