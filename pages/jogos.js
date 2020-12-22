@@ -11,37 +11,37 @@ function Jogos(){
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<DefaultHeader />
-			<div class="main" id="jogos">
+			<div className="main" id="jogos">
 				<h2>Jogos</h2>
 				<p>Veja alguns dos</p>
 				<p>meus jogos abaixo</p>
-                <div class="content">
-                    <div class="jitems">
-                        <div title="asteroids" class="game-wrap">
+                <div className="content">
+                    <div className="jitems">
+                        <div title="asteroids" className="game-wrap">
                             <Link href="https://asteroidsv5.vercel.app">
-                                <a class="ji">
-                                    <img src="/images/asteroids.png" alt="Asteroids" class="thumb"/>
-                                    <h3 class="ah3">
+                                <a className="ji">
+                                    <img src="/images/asteroids.png" alt="Asteroids" className="thumb"/>
+                                    <h3 className="ah3">
                                         Asteroids
                                     </h3>
                                 </a>
                             </Link>
-                            <div class="divp">
-                                <p class="desc">Reimaginação do clássico jogo Asteroids</p>
+                            <div className="divp">
+                                <p className="desc">Reimaginação do clássico jogo Asteroids</p>
                             </div>
                         </div>
 
-                        <div title="enigma" class="game-wrap">
+                        <div title="enigma" className="game-wrap">
                             <Link href="https://enigma.efrostbyte.repl.co">
-                                <a class="ji">
-                                    <img src="/images/tela2.jpg" alt="Enigma" class="thumb"/>
-                                    <h3 class="ah3">
+                                <a className="ji">
+                                    <img src="/images/tela2.jpg" alt="Enigma" className="thumb"/>
+                                    <h3 className="ah3">
                                         Enigma
                                     </h3>
                                 </a>
                             </Link>
-                            <div class="divp">
-                                <p class="desc">Jogo de enigma para testar suas habilidades</p>
+                            <div className="divp">
+                                <p className="desc">Jogo de enigma para testar suas habilidades</p>
                             </div>
                         </div>
                     </div>
