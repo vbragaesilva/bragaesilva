@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { defaultHead } from "next/head";
+import {useState} from 'react';
+/* import reactDOM from 'react-dom'; */
+//import { defaultHead } from "next/head";
 
 function Myfunc(){
     return (
@@ -7,12 +9,27 @@ function Myfunc(){
     )
 
     function DefaultHeader() {
+        const [msc, setMsc] = useState('menu-section') // msc == menu-section-class        
+        function toggleFunc(){
+            let s = ''
+            if(msc == 'menu-section'){
+                s = 'menu-section on'
+            }else{
+                s = 'menu-section'
+            }
+            setMsc(s)
+        }
         return (
             <div id="dh-wd">
                 <header>
                     <a class="tit">BRAGA E SILVA</a>
-
-                    <nav>
+                    <div class={msc}>
+                        <div class="menu-toggle" onClick={toggleFunc}>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                        <nav>
                         <ul class="nav-links">
 
                             <li>
@@ -39,11 +56,14 @@ function Myfunc(){
                                 </Link>
                             </li>
 
+                            <li>
+                                <Link href="/contato">
+                                    <button>Contato</button>
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
-                    <Link href="/contato">
-                        <button>Contato</button>
-                    </Link>
+                    </div>
                 </header>
             </div>
         )

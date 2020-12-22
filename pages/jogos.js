@@ -7,12 +7,17 @@ function Jogos(){
 		<div id="jogos-wd"> 
 			<Head>
 				<title>Braga e Silva</title>
+                <meta charset="UTF-8"></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<DefaultHeader />
-			<div class="content" id="jogos">
+			<div class="main" id="jogos">
 				<h2>Jogos</h2>
 				<p>Veja alguns dos</p>
 				<p>meus jogos abaixo</p>
+                <div class="content">
+                    <h3>Asteroids</h3>
+                </div>
 			</div>
 		</div>
 	)
