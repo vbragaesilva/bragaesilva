@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
+import {DefaultHeader} from '../components/braga.js';
 function Sobre(){
 
 	return(

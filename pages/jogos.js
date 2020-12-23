@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
+import {DefaultHeader} from '../components/braga.js';
+import {ListItem} from '../components/braga.js'
 function Jogos(){
 	
 	return(
@@ -37,7 +38,7 @@ function Jogos(){
 	)
 }
 
-function ListItem(props){
+/* function Listao(props){
     const title = props.title
     const img_src = props.img 
     const scr = props.href
@@ -60,6 +61,6 @@ function ListItem(props){
             </div>
         </div>
     )
-}
+} */
 
 export default Jogos

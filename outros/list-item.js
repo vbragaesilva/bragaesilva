@@ -1,20 +1,11 @@
 import Link from 'next/link';
 
 export default function ListItem(props){
-    const title = props.title
-    const img_src = props.img 
-    const scr = props.href
-    const alt = props.alt
-    const description = props.children
-    return <Litems title={title} img={img_src} href={scr} alt={alt}> {description} </Litems>
-}
-
-function Litems(props){
-    const title = props.title
-    const img_src = props.img 
-    const scr = props.href
-    const alt = props.alt
-    const description = props.children
+    const title = `${props.title}` /* sei la porque, mas as props so funcionaram se eu pegar o texto */
+    const img_src = `${props.img}` 
+    const scr = `${props.href}`
+    const alt = `${props.alt}`
+    const description = `${props.children}`
     return(
         <div>
     
@@ -33,4 +24,6 @@ function Litems(props){
             </div>
         </div>
     )
+    
 }
+
