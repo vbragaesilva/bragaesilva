@@ -6,6 +6,15 @@ export default function ListItem(props){
     const scr = props.href
     const alt = props.alt
     const description = props.children
+    return <Litems title={title} img={img_src} href={scr} alt={alt}> {description} </Litems>
+}
+
+function Litems(props){
+    const title = props.title
+    const img_src = props.img 
+    const scr = props.href
+    const alt = props.alt
+    const description = props.children
     return(
         <div>
     
