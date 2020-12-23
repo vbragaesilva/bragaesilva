@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import DefaultHeader from './myfunc.js';
+import GameListItem from './game-li.js'
 function Jogos(){
 	
 	return(
@@ -17,33 +18,15 @@ function Jogos(){
 				<p>meus jogos abaixo</p>
                 <div className="content">
                     <div className="jitems">
-                        <div title="asteroids" className="game-wrap">
-                            <Link href="https://asteroidsv5.vercel.app">
-                                <a className="ji">
-                                    <img src="/images/asteroids.png" alt="Asteroids" className="thumb"/>
-                                    <h3 className="ah3">
-                                        Asteroids
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div className="divp">
-                                <p className="desc">Reimaginação do clássico jogo Asteroids</p>
-                            </div>
-                        </div>
+        
+                        <GameListItem title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" alt="Asteroids">
+                            Reimaginação do clássico jogo Asteroids
+                        </GameListItem>
 
-                        <div title="enigma" className="game-wrap">
-                            <Link href="https://enigma.efrostbyte.repl.co">
-                                <a className="ji">
-                                    <img src="/images/tela2.jpg" alt="Enigma" className="thumb"/>
-                                    <h3 className="ah3">
-                                        Enigma
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div className="divp">
-                                <p className="desc">Jogo de enigma para testar suas habilidades</p>
-                            </div>
-                        </div>
+                        <GameListItem title="Enigma" href="https://enigma.efrostbyte.repl.co" img="/images/tela2.jpg" alt="Enigma">
+                            Jogo de enigma para testar suas habilidades
+                        </GameListItem>
+                    
                     </div>
                 </div>
 			</div>
