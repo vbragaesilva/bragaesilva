@@ -27,6 +27,9 @@ function Jogos(){
                             Jogo de enigma para testar suas habilidades
                         </GameListItem>
                     
+                        <GameListItem title="Sai Fora" href="javascript:alert('Sai fora kkkk')" img="/images/sai-fora.jpg" alt="sai fora">
+                            Sai fora ¯\_(ツ)_/¯
+                        </GameListItem>
                     </div>
                 </div>
 			</div>
