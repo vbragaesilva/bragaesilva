@@ -167,14 +167,14 @@ h2{
     height:91px;
 }
 
-.jitems{
+.liw{ /* List Item Wrapper */
     list-style: none;
     display: inline-block;
     width: 100%;
     text-align: left;
 }
 
-.ji{
+.ia{ /* Item Anchor */
     /* float: left; */
     display: inline-block;
     padding: 54px 1%;
@@ -182,7 +182,7 @@ h2{
     text-align: center;
 }
 
-.game-wrap{
+.item-wrap{
     width: 100%;
     height:247px;
     position: relative;

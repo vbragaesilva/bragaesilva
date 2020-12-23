@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import DefaultHeader from './myfunc.js';
-import GameListItem from './game-li.js'
+import ListItem from './list-item.js'
 function Jogos(){
 	
 	return(
@@ -17,19 +16,19 @@ function Jogos(){
 				<p>Veja alguns dos</p>
 				<p>meus jogos abaixo</p>
                 <div className="content">
-                    <div className="jitems">
+                    <div className="liw">
         
-                        <GameListItem title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" alt="Asteroids">
+                        <ListItem title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" alt="Asteroids">
                             Reimaginação do clássico jogo Asteroids
-                        </GameListItem>
+                        </ListItem>
 
-                        <GameListItem title="Enigma" href="https://enigma.efrostbyte.repl.co" img="/images/tela2.jpg" alt="Enigma">
+                        <ListItem title="Enigma" href="https://enigma.efrostbyte.repl.co" img="/images/tela2.jpg" alt="Enigma">
                             Jogo de enigma para testar suas habilidades
-                        </GameListItem>
+                        </ListItem>
                     
-                        <GameListItem title="Sai Fora" href="javascript:alert('Sai fora kkkk')" img="/images/sai-fora.jpg" alt="sai fora">
+                        <ListItem title="Sai Fora" href="javascript:alert('Sai fora kkkk')" img="/images/sai-fora.jpg" alt="sai fora">
                             Sai fora ¯\_(ツ)_/¯
-                        </GameListItem>
+                        </ListItem>
                     </div>
                 </div>
 			</div>
