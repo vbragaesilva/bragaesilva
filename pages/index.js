@@ -13,7 +13,7 @@ function Home() {
 
             <DefaultHeader />
 
-            <div class="main">
+            <div className="main">
                 <h2>Bem vindo!</h2>
                 <p>Este é o meu site.</p>
                 <p>Você pode encontrar coisas</p>
