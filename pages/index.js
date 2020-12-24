@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import {DefaultHeader} from '../components/braga.js';
 function Home() {
 
