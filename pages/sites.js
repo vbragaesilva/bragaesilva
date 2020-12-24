@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
+import {DefaultHeader} from '../components/braga.js';
 function Sites(){
 
 	return(
@@ -11,7 +11,7 @@ function Sites(){
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<DefaultHeader />
-			<div class="main">
+			<div className="main">
 				<h2>Sites</h2>
 				<p>Abaixo estão alguns</p>
 				<p> sites interessantes</p>

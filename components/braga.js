@@ -3,12 +3,8 @@ import {useState} from 'react';
 /* import reactDOM from 'react-dom'; */
 //import { defaultHead } from "next/head";
 
-function Myfunc(){
-    return (
-        <div><DefaultHeader/></div>
-    )
 
-    function DefaultHeader() {
+function DefaultHeader() {
         const [msc, setMsc] = useState('menu-section') // msc == menu-section-class        
         function toggleFunc(){
             let s = ''
@@ -22,37 +18,37 @@ function Myfunc(){
         return (
             <div id="dh-wd">
                 <header>
-                    <a class="tit">BRAGA E SILVA</a>
-                    <div class={msc}>
-                        <div class="menu-toggle" onClick={toggleFunc}>
-                            <div class="one"></div>
-                            <div class="two"></div>
-                            <div class="three"></div>
+                    <a className="tit">BRAGA E SILVA</a>
+                    <div className={msc}>
+                        <div className="menu-toggle" onClick={toggleFunc}>
+                            <div className="one"></div>
+                            <div className="two"></div>
+                            <div className="three"></div>
                         </div>
                         <nav>
-                        <ul class="nav-links">
+                        <ul className="nav-links">
 
                             <li>
                                 <Link href="/">
-                                    <a class="as">Home</a>
+                                    <a className="as">Home</a>
                                 </Link>
                             </li>
 
                             <li>
                                 <Link href="/jogos">
-                                    <a class="as">Jogos</a>
+                                    <a className="as">Jogos</a>
                                 </Link>
                             </li>
 
                             <li>
                                 <Link href="/sites">
-                                    <a class="as">Sites</a>
+                                    <a className="as">Sites</a>
                                 </Link>
                             </li>
 
                             <li>
                                 <Link href="/sobre">
-                                    <a class="as">Sobre</a>
+                                    <a className="as">Sobre</a>
                                 </Link>
                             </li>
 
@@ -67,9 +63,38 @@ function Myfunc(){
                 </header>
             </div>
         )
-    }
+}
+
+function ListItem(props){
+    const title = `${props.title}` /* sei la porque, mas as props so funcionaram se eu pegar o texto */
+    const img_src = `${props.img}` 
+    const scr = `${props.href}`
+    const alt = `${props.alt}`
+    const description = `${props.children}`
+    return(
+        <div>
+    
+            <div title={title} className="game-wrap">
+                <Link href={scr}>
+                    <a className="ia">
+                        <img src={img_src} alt={alt} className="thumb"/>
+                        <h3 className="ah3">
+                            {title}
+                        </h3>
+                    </a>
+                </Link>
+                <div className="divp">
+                    <p className="desc">{description}</p>
+                </div>
+            </div>
+        </div>
+    )
     
 }
 
 
-export default Myfunc
+module.exports = {
+    DefaultHeader,
+    ListItem
+}
+

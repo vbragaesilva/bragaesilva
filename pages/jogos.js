@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
+import {DefaultHeader} from '../components/braga.js';
+import {ListItem} from '../components/braga.js'
 function Jogos(){
 	
 	return(
@@ -11,44 +12,55 @@ function Jogos(){
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<DefaultHeader />
-			<div class="main" id="jogos">
+			<div className="main" id="jogos">
 				<h2>Jogos</h2>
 				<p>Veja alguns dos</p>
 				<p>meus jogos abaixo</p>
-                <div class="content">
-                    <div class="jitems">
-                        <div title="asteroids" class="game-wrap">
-                            <Link href="https://asteroidsv5.vercel.app">
-                                <a class="ji">
-                                    <img src="/images/asteroids.png" alt="Asteroids" class="thumb"/>
-                                    <h3 class="ah3">
-                                        Asteroids
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div class="divp">
-                                <p class="desc">Reimaginação do clássico jogo Asteroids</p>
-                            </div>
-                        </div>
+                <div className="content">
+                    <div className="liw"> 
 
-                        <div title="enigma" class="game-wrap">
-                            <Link href="https://enigma.efrostbyte.repl.co">
-                                <a class="ji">
-                                    <img src="/images/tela2.jpg" alt="Enigma" class="thumb"/>
-                                    <h3 class="ah3">
-                                        Enigma
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div class="divp">
-                                <p class="desc">Jogo de enigma para testar suas habilidades</p>
-                            </div>
-                        </div>
+                        <ListItem title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png">
+                            Reimaginação do clássico jogo Asteroids
+                        </ListItem>
+
+                        <ListItem title="Enigma" href="https://enigma.efrostbyte.repl.co" img="/images/tela2.jpg">
+                            Jogo de enigma para testar suas habilidades
+                        </ListItem>
+
+                        <ListItem title="Sai fora" href="javascript:alert('Sai fora kkkk')" img="/images/sai-fora.jpg">
+                            Sai fora ¯\_(ツ)_/¯
+                        </ListItem>
+
                     </div>
                 </div>
 			</div>
 		</div>
 	)
 }
+
+/* function Listao(props){
+    const title = props.title
+    const img_src = props.img 
+    const scr = props.href
+    const description = props.children
+    return(
+        <div>
+    
+            <div title={title} className="game-wrap">
+                <Link href={scr}>
+                    <a className="ia">
+                        <img src={img_src} alt={title} className="thumb"/>
+                        <h3 className="ah3">
+                            {title}
+                        </h3>
+                    </a>
+                </Link>
+                <div className="divp">
+                    <p className="desc">{description}</p>
+                </div>
+            </div>
+        </div>
+    )
+} */
 
 export default Jogos

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
+import {DefaultHeader} from '../components/braga.js';
 function Sobre(){
 
 	return(
@@ -11,7 +11,7 @@ function Sobre(){
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 			</Head>
 			<DefaultHeader/>
-			<div class="main">
+			<div className="main">
 				<h2>Sobre</h2>
 				<p>Nome: Vinícius Braga e Silva</p>
 				<p>Nascimento: 01/01/2001</p>
