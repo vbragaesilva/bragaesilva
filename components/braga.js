@@ -65,7 +65,7 @@ function DefaultHeader() {
         )
 }
 
-function ListItem(props){
+function ListItem(props){ /* envolver os ListItems com uma .liw -> className="liw"  (List Item Wrapper)*/
     const title = `${props.title}` /* sei la porque, mas as props so funcionaram se eu pegar o texto */
     const img_src = `${props.img}` 
     const scr = `${props.href}`
@@ -74,7 +74,7 @@ function ListItem(props){
     return(
         <div>
     
-            <div title={title} className="game-wrap">
+            <div title={title} className="item-wrap">
                 <Link href={scr}>
                     <a className="ia">
                         <img src={img_src} alt={alt} className="thumb"/>
