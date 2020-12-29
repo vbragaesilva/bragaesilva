@@ -13,8 +13,8 @@ function Jogos(){
 			<DefaultHeader />
 			<div className="main" id="jogos">
 				<h2>Jogos</h2>
-				<p>Veja alguns dos</p>
-				<p>meus jogos abaixo</p>
+				<p>Alguns dos meus</p>
+				<p>jogos estão abaixo:</p>
                 <div className="content">
                     <div className="liw"> 
 
