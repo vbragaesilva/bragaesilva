@@ -22,7 +22,7 @@ function Jogos(){
                             Reimaginação do clássico jogo Asteroids
                         </ListItem>
 
-                        <ListItem title="Enigma" href="https://enigma.efrostbyte.repl.co" img="/images/tela2.jpg">
+                        <ListItem title="Enigma" href="https://pronnt.efrostbyte.vercel.app" img="/images/tela2.jpg">
                             Jogo de enigma para testar suas habilidades
                         </ListItem>
 
