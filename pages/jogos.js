@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import {DefaultHeader, ListItem} from '../components/braga.js';
+import {DefaultHeader, ListLink} from '../components/braga.js';
 function Jogos(){
 	
 	return(
@@ -18,17 +17,17 @@ function Jogos(){
                 <div className="content">
                     <div className="liw"> 
 
-                        <ListItem title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png">
+                        <ListLink title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" >
                             Reimaginação do clássico jogo Asteroids
-                        </ListItem>
+                        </ListLink>
 
-                        <ListItem title="Enigma" href="https://pronnt.efrostbyte.vercel.app" img="/images/tela2.jpg">
-                            Jogo de enigma para testar suas habilidades
-                        </ListItem>
+                        <ListLink title="Pronn't" href="https://pronnt.efrostbyte.vercel.app" img="/images/tela2.jpg">
+                            Jogo de enigma inspirado em Notpron
+                        </ListLink>
 
-                        <ListItem title="Sai fora" href="javascript:alert('Sai fora kkkk')" img="/images/sai-fora.jpg">
-                            Sai fora ¯\_(ツ)_/¯
-                        </ListItem>
+                        <ListLink title="Troll" href="/jogos" img="/images/sai-fora.jpg">
+                            Troll ¯\_(ツ)_/¯
+                        </ListLink>
 
                     </div>
                 </div>

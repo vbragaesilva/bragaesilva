@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {DefaultHeader} from '../components/braga.js';
+import {DefaultHeader, ListLink} from '../components/braga.js';
 function Home() {
 
     return (
@@ -14,11 +14,18 @@ function Home() {
 
             <div className="main">
                 <h2>Bem vindo!</h2>
-                <p>Este é o meu site.</p>
+                <p>Este é o meu novo site.</p>
                 <p>Você pode encontrar coisas</p>
-                <p> interessantes para fazer </p>
-                <p>no cabeçalho.</p>
-                
+                <p> interessantes no cabeçalho</p>
+                <p>ou aqui embaixo &#x1F447;</p>
+                <div className="content">
+                    <div className="liw">
+                        <ListLink title="Jogos" href="/jogos" img="none" >
+                            Aqui estão alguns dos jogos feitos por mim
+                        </ListLink>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     )
