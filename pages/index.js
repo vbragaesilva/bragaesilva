@@ -23,7 +23,12 @@ function Home() {
                         <ListLink title="Jogos" href="/jogos" img="none" >
                             Aqui estão alguns dos jogos feitos por mim
                         </ListLink>
-                        
+                        <ListLink title="Sites" href="/sites" img="none">
+                            Alguns sites interessantes
+                        </ListLink>
+                        <ListLink title="Sobre" href="/sobre" img="none">
+                            Conheça mais sobre mim
+                        </ListLink>
                     </div>
                 </div>
             </div>
