@@ -65,20 +65,30 @@ function DefaultHeader() {
         )
 }
 
-function ListItem(props){
+function ListLink(props){ /* envolver os ListItems com uma .liw -> className="liw"  (List Item Wrapper)*/
     const title = `${props.title}` /* sei la porque, mas as props so funcionaram se eu pegar o texto */
     const img_src = `${props.img}` 
-    const scr = `${props.href}`
-    const alt = `${props.alt}`
+    const src = `${props.href}`
     const description = `${props.children}`
+    let titleH3Class = 'ah3'
+    if(img_src == 'none'){
+        titleH3Class = 'ah3 noimage'
+    }
+    function DisplayImg(){ /* <img src={img_src} alt={title} className="thumb"/> */
+        if(img_src != 'none'){ /* img="none" retira a imagem  */
+            return <div><img src={img_src} alt={title} className="thumb"/></div>
+        }else{
+            return (<div></div>)
+        }
+    }
     return(
         <div>
     
-            <div title={title} className="game-wrap">
-                <Link href={scr}>
+            <div title={title} className="item-wrap">
+                <Link href={src}>
                     <a className="ia">
-                        <img src={img_src} alt={alt} className="thumb"/>
-                        <h3 className="ah3">
+                        <DisplayImg />
+                        <h3 className={titleH3Class}>
                             {title}
                         </h3>
                     </a>
@@ -95,6 +105,6 @@ function ListItem(props){
 
 module.exports = {
     DefaultHeader,
-    ListItem
+    ListLink
 }
 
