@@ -1,21 +1,22 @@
 import Head from 'next/head';
-import {DefaultHeader, ListLink} from '../components/braga.js';
-function Jogos(){
-	
-	return(
-		<div id="jogos-wd"> 
-			<Head>
-				<title>Braga e Silva</title>
+import DefaultHeader from '../components/defaultheader.js';
+import ListLink from '../components/listlink.js';
+function Jogos() {
+
+    return (
+        <div id="jogos-wd">
+            <Head>
+                <title>Braga e Silva</title>
                 <meta charset="UTF-8"></meta>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-			</Head>
-			<DefaultHeader />
-			<div className="main" id="jogos">
-				<h2>Jogos</h2>
-				<p>Alguns dos meus</p>
-				<p>jogos estão abaixo:</p>
+            </Head>
+            <DefaultHeader />
+            <div className="main" id="jogos">
+                <h2>Jogos</h2>
+                <p>Alguns dos meus</p>
+                <p>jogos estão abaixo:</p>
                 <div className="content">
-                    <div className="liw"> 
+                    <div className="liw">
 
                         <ListLink title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" >
                             Reimaginação do clássico jogo Asteroids
@@ -31,9 +32,9 @@ function Jogos(){
 
                     </div>
                 </div>
-			</div>
-		</div>
-	)
+            </div>
+        </div>
+    )
 }
 
 export default Jogos

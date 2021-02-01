@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import {DefaultHeader, ListLink} from '../components/braga.js';
+import DefaultHeader from '../components/defaultheader.js';
+import ListLink from '../components/listlink.js';
 function Home() {
 
     return (
