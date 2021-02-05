@@ -1,6 +1,6 @@
 import globalStyles from '../styles/404s.js'
 export default function Custom404(){
-    const responses = ['amigo', 'meu amigo', 'meu consagrado', 'meu parceiro']
+    const responses = ['amigo', 'meu amigo', 'meu consagrado', 'meu parceiro', 'meu caro', 'patriota', 'meu chapa']
     const index = Math.floor(Math.random()*responses.length)
     const vocative = responses[index];
     return(
