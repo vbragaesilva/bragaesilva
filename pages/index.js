@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import DefaultHeader from '../components/defaultheader.js';
-import ListLink from '../components/listlink.js';
-import List from '../components/list.js';
+import {DefaultHeader, ListLink} from '../components/braga.js';
 function Home() {
 
     return (
@@ -21,9 +19,9 @@ function Home() {
                 <p> interessantes no cabeçalho</p>
                 <p>ou aqui embaixo &#x1F447;</p>
                 <div className="content">
-                    <List>
+                    <div className="liw">
                         <ListLink title="Jogos" href="/jogos" img="none" >
-                            Alguns dos jogos feitos por mim
+                            Aqui estão alguns dos jogos feitos por mim
                         </ListLink>
                         <ListLink title="Sites" href="/sites" img="none">
                             Alguns sites interessantes
@@ -31,7 +29,7 @@ function Home() {
                         <ListLink title="Sobre" href="/sobre" img="none">
                             Conheça mais sobre mim
                         </ListLink>
-                    </List>
+                    </div>
                 </div>
             </div>
         </div>
