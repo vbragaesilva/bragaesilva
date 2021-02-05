@@ -1,5 +1,5 @@
 import ListLink from '../components/listlink.js';
-import LinkList from '../components/linklist.js';
+import LinkList from '../components/list.js';
 export default function Teste(){
     return (
         <div>
