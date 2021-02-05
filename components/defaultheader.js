@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import {useState} from 'react';
+import { Title, MyHeader } from './styles/defaultheader.js'
 /* import reactDOM from 'react-dom'; */
 //import { defaultHead } from "next/head";
+
+
+
 
 
 export default function DefaultHeader() {
@@ -17,8 +21,21 @@ export default function DefaultHeader() {
         }
         return (
             <div id="dh-wd">
-                <header>
-                    <a className="tit">BRAGA E SILVA</a>
+                <style jsx>
+                    {`
+                        .menu-toggle{
+                            transition: 0.3s ease 0s;
+                        }
+                    
+                        .menu-section.on, .menu-section{ 
+                            transition: 0.3s ease 0s;
+                        }
+                    `}
+                </style>
+                <MyHeader>
+                    <Link href="/">
+                        <Title className="home-title">Braga e Silva</Title>
+                    </Link>
                     <div className={msc}>
                         <div className="menu-toggle" onClick={toggleFunc}>
                             <div className="one"></div>
@@ -60,7 +77,7 @@ export default function DefaultHeader() {
                         </ul>
                     </nav>
                     </div>
-                </header>
+                </MyHeader>
             </div>
         )
 }
