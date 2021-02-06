@@ -1,6 +1,7 @@
 import css from 'styled-jsx/css'
 
 export default css.global`
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
     *{
         box-sizing: border-box;
         margin: 0;
@@ -10,7 +11,8 @@ export default css.global`
     }
     h1, h2{
         color:black;
-        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;
+        /*font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;*/
+        font-family: 'Space Mono' monospace;
         font-weight: normal;
     }
     h1{
@@ -35,7 +37,7 @@ export default css.global`
         text-align: center;
         display: flex;
         flex-direction:column;
-        align items:center;
+        align-items:center;
         justify-content:center;
     }
     .ildiv{

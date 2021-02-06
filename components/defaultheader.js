@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {useState} from 'react';
-import { Title, MyHeader } from './styles/defaultheader.js'
+import { Title, MyHeader, Circle } from './styles/defaultheader.js'
 /* import reactDOM from 'react-dom'; */
 //import { defaultHead } from "next/head";
 //oi
@@ -16,6 +16,9 @@ export default function DefaultHeader() {
                 s = 'menu-section on'
             }else{
                 s = 'menu-section'
+                if(window.scrollY > 0){
+                    window.scrollTo(0, 0);  // pode dar erro (window is not defined)
+                }
             }
             setMsc(s)
         }
@@ -78,6 +81,7 @@ export default function DefaultHeader() {
                     </nav>
                     </div>
                 </MyHeader>
+                <Circle className="header-circle"/>
             </div>
         )
 }

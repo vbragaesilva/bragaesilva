@@ -6,6 +6,7 @@ export default function ListLink(props) { /* envolver os ListItems LinkList */
     const title = `${props.title}`
     const img_src = `${props.img}`
     const src = `${props.href}`
+    const target = src.startsWith('/')? '_self' : '_blank'
     const description = `${props.children}`
     let titleH3Class = 'ah3'
     if (img_src == 'none') {
@@ -23,7 +24,7 @@ export default function ListLink(props) { /* envolver os ListItems LinkList */
 
             <ItemWrap title={title} className="item-wrap">
                 <Link href={src}>
-                    <a>
+                    <a target={target}>
                         <DisplayImg />
                         <h3 className={titleH3Class}>
                             {title}
