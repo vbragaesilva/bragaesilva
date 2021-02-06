@@ -10,7 +10,7 @@ export const ItemWrap = styled.div`
     flex-direction: row;
     align-items: center;
     box-shadow: 0px 0px 10px #cacaca;
-    width: 75vw;
+    width: 80vw;
     a{
         display: inline-block;
         padding: 15px 1%;
