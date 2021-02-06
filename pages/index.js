@@ -31,6 +31,9 @@ function Home() {
                         <ListLink title="Sobre" href="/sobre" img="none">
                             Conheça mais sobre mim
                         </ListLink>
+                        <ListLink title="Contato" href="/contato" img="none">
+                            Entre em contato
+                        </ListLink>
                     </List>
                 </div>
             </div>

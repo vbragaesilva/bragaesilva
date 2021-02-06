@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {useState} from 'react';
-import { Title, MyHeader } from './styles/defaultheader.js'
+import { Title, MyHeader, Circle } from './styles/defaultheader.js'
 /* import reactDOM from 'react-dom'; */
 //import { defaultHead } from "next/head";
 //oi
@@ -78,6 +78,7 @@ export default function DefaultHeader() {
                     </nav>
                     </div>
                 </MyHeader>
+                <Circle />
             </div>
         )
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 const verde_agua = '#32c8a0';
 const verde_agua_hover = '#1fb089'
 const cinza = '#1c2626'
+const circleSize = 400;
 export const Title = styled.a`
     font-family: 'Permanent Marker', cursive;
     margin: 10px;
@@ -180,4 +181,16 @@ export const MyHeader = styled.header`
         }
     
     }
+`
+
+export const Circle = styled.div`
+    position:absolute;
+    z-index: -2;
+    width: ${circleSize}px;
+    height: ${circleSize}px;
+    background-color: ${verde_agua};
+    border-radius: ${circleSize/2}px;
+    left: ${-circleSize/2}px;
+    top: ${(-circleSize/2)+150}px
+
 `
