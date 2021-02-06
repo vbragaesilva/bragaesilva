@@ -192,5 +192,4 @@ export const Circle = styled.div`
     border-radius: ${circleSize/2}px;
     left: ${-circleSize/2}px;
     top: ${(-circleSize/2)+150}px
-
 `
