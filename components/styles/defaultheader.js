@@ -2,7 +2,8 @@ import styled from 'styled-components';
 const verde_agua = '#32c8a0';
 const verde_agua_hover = '#1fb089'
 const cinza = '#1c2626'
-let circleSize = 400;
+const circleSize = 400;
+const smallCircle = 250;
 
 export const Title = styled.a`
     font-family: 'Permanent Marker', cursive;
@@ -31,9 +32,9 @@ export const MyHeader = styled.header`
         font-size: 2.3rem;
         color: ${cinza};
         transition: 0.3s ease 0s;
-      }
+    }
       
-      a, li, button{
+    a, li, button{
           /* sem seleção azul */
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -42,45 +43,50 @@ export const MyHeader = styled.header`
           -ms-user-select: none;
           user-select: none;
           -webkit-tap-highlight-color: transparent;
-      }
+    }
       
-      nav{
-          transition: 0.3s ease 0s;
-      }
+    nav{
+        transition: 0.3s ease 0s;
+    }
       
-      .nav-links{
-          list-style: none;
-      }
+    .nav-links{
+        list-style: none;
+    }
       
-      .nav-links li{
-          display: inline-block;
-          padding: 2.4rem 1.8rem;
-      }
+    .nav-links li{
+        display: inline-block;
+        padding: 2.4rem 1.8rem;
+    }
       
-      .as{
-              transition: 0.3s ease 0s;
-              color: ${cinza};
-      }
+    .as{
+        transition: 0.3s ease 0s;
+        color: ${cinza};
+    }
       
-      .as:hover{
-          color: ${verde_agua};
-      }
+    .as:hover{
+        color: ${verde_agua};
+    }
       
-      button{
-          margin-left: 0;
-          padding: 9px 25px;
-          background-color: ${verde_agua};
-          border: none;
-          color: white;
-          border-radius: 50px;
-          cursor: pointer;
-          transition: 0.3s ease 0s;
-          outline: none;
-      }
-      
-      button:hover{
-          background-color: ${verde_agua_hover};
-      }
+    button{
+        margin-left: 0;
+        padding: 9px 25px;
+        background-color: ${verde_agua};
+        border: none;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s ease 0s;
+        outline: none;
+    }
+     
+    button:hover{
+        background-color: ${verde_agua_hover};
+    }
+
+    .menu-section {
+        height: 40px;
+    }
+
     @media (max-width: 730px){
         nav{
             display: none;
@@ -110,14 +116,16 @@ export const MyHeader = styled.header`
     
         /* fullscreen */
         .menu-section.on{
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             background-color: white;
             width: 100vw;
-            height: 100vh;
             z-index: 10;
-            
+
+            transition: .3s ease 0s ; 
+            height:100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -184,6 +192,7 @@ export const MyHeader = styled.header`
 `
 
 export const Circle = styled.div`
+    transition: 0.3s ease 0s;
     position:absolute;
     z-index: -2;
     width: ${circleSize}px;
@@ -192,4 +201,11 @@ export const Circle = styled.div`
     border-radius: ${circleSize/2}px;
     left: ${-circleSize/2}px;
     top: ${(-circleSize/2)+150}px;
+    @media (max-width: 700px){
+        width: ${smallCircle}px;
+        border-radius: ${smallCircle/2}px;
+        height: ${smallCircle}px;
+        left:${-smallCircle/2 +10}px;
+        top:${(-smallCircle/2)+90}px;
+    }
 `
