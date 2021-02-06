@@ -85,6 +85,9 @@ export const MyHeader = styled.header`
 
     .menu-section {
         height: 40px;
+        display: flex;
+        align-items: center;
+        transition: .3s ease 0s;
     }
 
     @media (max-width: 730px){
@@ -95,8 +98,8 @@ export const MyHeader = styled.header`
         .two,
         .three{
             background-color: ${cinza};
-            height: 5px;
-            width: 100%;
+            height: 2px;
+            width: 90%;
             margin: 6px auto;
             border-radius: 5px;
             opacity: 1;
@@ -138,7 +141,7 @@ export const MyHeader = styled.header`
         .menu-section.on .menu-toggle{
             position: absolute;
             top: 23px;
-            right: 28px;
+            right: 9px;
             cursor: pointer;
         }
     
@@ -151,7 +154,7 @@ export const MyHeader = styled.header`
         }
     
         .menu-section.on .menu-toggle .three{
-            transform: rotate(-45deg) translate(8px, -10px);
+            transform: rotate(-45deg) translate(3px, -8px);
         }
     
         .menu-section.on nav{

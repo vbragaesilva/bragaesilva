@@ -16,7 +16,9 @@ export default function DefaultHeader() {
                 s = 'menu-section on'
             }else{
                 s = 'menu-section'
-                window.scrollTo(0, 0); // pode dar erro (window is not defined)
+                if(window.scrollY > 0){
+                    window.scrollTo(0, 0);  // pode dar erro (window is not defined)
+                }
             }
             setMsc(s)
         }
