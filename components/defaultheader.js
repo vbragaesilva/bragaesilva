@@ -78,7 +78,7 @@ export default function DefaultHeader() {
                     </nav>
                     </div>
                 </MyHeader>
-                <Circle />
+                <Circle className="header-circle"/>
             </div>
         )
 }

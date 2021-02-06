@@ -2,7 +2,8 @@ import styled from 'styled-components';
 const verde_agua = '#32c8a0';
 const verde_agua_hover = '#1fb089'
 const cinza = '#1c2626'
-const circleSize = 400;
+let circleSize = 400;
+
 export const Title = styled.a`
     font-family: 'Permanent Marker', cursive;
     margin: 10px;
@@ -15,7 +16,6 @@ export const Title = styled.a`
     display: inline;
     font-family: 'Space Mono', monospace;
 `
-//oi
 // ----------------------
 export const MyHeader = styled.header`
     display: flex;
@@ -191,5 +191,5 @@ export const Circle = styled.div`
     background-color: ${verde_agua};
     border-radius: ${circleSize/2}px;
     left: ${-circleSize/2}px;
-    top: ${(-circleSize/2)+150}px
+    top: ${(-circleSize/2)+150}px;
 `
