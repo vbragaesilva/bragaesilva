@@ -1,54 +1,41 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import DefaultHeader from './myfunc.js';
-function Jogos(){
-	
-	return(
-		<div id="jogos-wd"> 
-			<Head>
-				<title>Braga e Silva</title>
-                <meta charset="UTF-8"></meta>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-			</Head>
-			<DefaultHeader />
-			<div class="main" id="jogos">
-				<h2>Jogos</h2>
-				<p>Veja alguns dos</p>
-				<p>meus jogos abaixo</p>
-                <div class="content">
-                    <div class="jitems">
-                        <div title="asteroids" class="game-wrap">
-                            <Link href="https://asteroidsv5.vercel.app">
-                                <a class="ji">
-                                    <img src="/images/asteroids.png" alt="Asteroids" class="thumb"/>
-                                    <h3 class="ah3">
-                                        Asteroids
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div class="divp">
-                                <p class="desc">Reimaginação do clássico jogo Asteroids</p>
-                            </div>
-                        </div>
+import DefaultHeader from '../components/defaultheader.js';
+import ListLink from '../components/listlink.js';
+import List from '../components/list.js';
+function Jogos() {
 
-                        <div title="enigma" class="game-wrap">
-                            <Link href="https://enigma.efrostbyte.repl.co">
-                                <a class="ji">
-                                    <img src="/images/tela2.jpg" alt="Enigma" class="thumb"/>
-                                    <h3 class="ah3">
-                                        Enigma
-                                    </h3>
-                                </a>
-                            </Link>
-                            <div class="divp">
-                                <p class="desc">Jogo de enigma para testar suas habilidades</p>
-                            </div>
-                        </div>
-                    </div>
+    return (
+        <div id="jogos-wd">
+            <Head>
+                <title>Braga e Silva</title>
+                <meta charSet="UTF-8"></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            </Head>
+            <DefaultHeader />
+            <div className="main" id="jogos">
+                <h2>Jogos</h2>
+                <p>Alguns dos meus</p>
+                <p>jogos estão abaixo:</p>
+                <div className="content">
+                    <List>
+
+                        <ListLink title="Asteroids" href="https://asteroidsv5.vercel.app" img="/images/asteroids.png" >
+                            Reimaginação do Asteroids
+                        </ListLink>
+
+                        <ListLink title="Pronn't" href="https://pronnt.efrostbyte.vercel.app" img="/images/tela2.jpg">
+                            Jogo de enigma
+                        </ListLink>
+
+                        <ListLink title="Troll" href="/jogos" img="/images/sai-fora.jpg">
+                            Troll ¯\_(ツ)_/¯
+                        </ListLink>
+
+                    </List>
                 </div>
-			</div>
-		</div>
-	)
+            </div>
+        </div>
+    )
 }
 
 export default Jogos
