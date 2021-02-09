@@ -87,7 +87,8 @@ export const MyHeader = styled.header`
         height: 40px;
         display: flex;
         align-items: center;
-        transition: .3s ease 0s;
+        transition: 0s;
+        z-index: 10;
     }
 
     @media (max-width: 730px){
@@ -130,7 +131,9 @@ export const MyHeader = styled.header`
             height:100vh;
 
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
+            
             align-items: center;
         }
     
@@ -172,7 +175,7 @@ export const MyHeader = styled.header`
         }
     
         .menu-section.on nav ul li a{
-            line-height: 9rem;
+            /* line-height: 9rem; */
             padding: 4.6rem 13.6rem;
         }
     

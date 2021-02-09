@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import DefaultHeader from '../components/defaultheader.js';
 import ListLink from '../components/listlink.js';
+import DefaultFooter from '../components/defaultfooter.js';
 import List from '../components/list.js';
 function Home() {
 
@@ -37,6 +38,7 @@ function Home() {
                     </List>
                 </div>
             </div>
+            <DefaultFooter />
         </div>
     )
 }
